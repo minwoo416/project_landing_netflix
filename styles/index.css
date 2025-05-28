@@ -1,0 +1,43 @@
+/* -----------------s:1행 */
+.wrap {
+    background-color:#000;
+    text-align:center;
+}
+.wrap .intro {background:url(../images/netflix_bg.jpg) no-repeat}
+.wrap .intro .logo {
+    margin-bottom:300px; padding-top:200px;
+}
+.wrap .intro .logo h1 {}
+.wrap .intro .logo h1 a {}
+.wrap .intro .logo h1 a img {}
+.wrap .intro .logo h2 {
+    font-size:3.125rem; font-weight:700;
+    line-height:1.5;
+    margin-top:50px; 
+}
+.wrap .intro .img_btn {}
+.wrap .intro .img_btn .photo {
+    background-color:coral;
+    display:flex; align-items:center; justify-content:center;
+    width:1520px; margin:0 auto;
+}
+.wrap .intro .img_btn .photo a {}
+.wrap .intro .img_btn .photo a:nth-of-type(1) {margin-right:-40px;}
+.wrap .intro .img_btn .photo a:nth-of-type(2) {margin-right:-40px;}
+.wrap .intro .img_btn .photo a:nth-of-type(3) {}
+.wrap .intro .img_btn .photo a:nth-of-type(4) {margin-left:-40px;}
+.wrap .intro .img_btn .photo a:nth-of-type(5) {margin-left:-40px;}
+.wrap .intro .img_btn .photo a img {}
+.wrap .intro .img_btn .photo a:nth-of-type(1) {}
+.wrap .intro .img_btn .photo a:nth-of-type(2) {}
+.wrap .intro .img_btn .photo a:nth-of-type(3) {z-index:30;}
+.wrap .intro .img_btn .photo a:nth-of-type(4) {z-index:20;}
+.wrap .intro .img_btn .photo a:nth-of-type(5) {}
+.wrap .intro .img_btn p {
+    font-size:2.188rem;
+    line-height:1.5;
+}
+.wrap .intro .img_btn .go_btn {background-color:blue;}
+.wrap .intro .img_btn .go_btn button {}
+.wrap .intro .img_btn .go_btn button {}
+/* -----------------e:1행 */
