@@ -1,43 +1,123 @@
-/* -----------------s:1행 */
+/* -----------------s:1행 intro */
 .wrap {
     background-color:#000;
     text-align:center;
 }
-.wrap .intro {background:url(../images/netflix_bg.jpg) no-repeat}
-.wrap .intro .logo {
+.wrap section {/* 각 행에 대한 마진 */
+    margin-bottom:400px;
+}
+.wrap .intro {background:url(../images/netflix_bg.jpg) no-repeat 50% 0 }
+.wrap .intro .container {margin:0 auto;}
+.wrap .intro .container .logo {
     margin-bottom:300px; padding-top:200px;
 }
-.wrap .intro .logo h1 {}
-.wrap .intro .logo h1 a {}
-.wrap .intro .logo h1 a img {}
-.wrap .intro .logo h2 {
+.wrap .intro .container .logo h1 {}
+.wrap .intro .container .logo h1 a {}
+.wrap .intro .container .logo h1 a img {}
+.wrap .intro .container .logo h2 {
     font-size:3.125rem; font-weight:700;
     line-height:1.5;
     margin-top:50px; 
 }
-.wrap .intro .img_btn {}
-.wrap .intro .img_btn .photo {
-    background-color:coral;
+.wrap .intro .container .img_btn {}
+.wrap .intro .container .img_btn .photo {
     display:flex; align-items:center; justify-content:center;
     width:1520px; margin:0 auto;
 }
-.wrap .intro .img_btn .photo a {}
-.wrap .intro .img_btn .photo a:nth-of-type(1) {margin-right:-40px;}
-.wrap .intro .img_btn .photo a:nth-of-type(2) {margin-right:-40px;}
-.wrap .intro .img_btn .photo a:nth-of-type(3) {}
-.wrap .intro .img_btn .photo a:nth-of-type(4) {margin-left:-40px;}
-.wrap .intro .img_btn .photo a:nth-of-type(5) {margin-left:-40px;}
-.wrap .intro .img_btn .photo a img {}
-.wrap .intro .img_btn .photo a:nth-of-type(1) {}
-.wrap .intro .img_btn .photo a:nth-of-type(2) {}
-.wrap .intro .img_btn .photo a:nth-of-type(3) {z-index:30;}
-.wrap .intro .img_btn .photo a:nth-of-type(4) {z-index:20;}
-.wrap .intro .img_btn .photo a:nth-of-type(5) {}
-.wrap .intro .img_btn p {
+.wrap .intro .container .img_btn .photo a {}
+.wrap .intro .container .img_btn .photo a:nth-of-type(1) {margin-right:-40px;}
+.wrap .intro .container .img_btn .photo a:nth-of-type(2) {margin-right:-40px;}
+.wrap .intro .container .img_btn .photo a:nth-of-type(3) {z-index:30;}
+.wrap .intro .container .img_btn .photo a:nth-of-type(4) {margin-left:-40px; z-index:20;}
+.wrap .intro .container .img_btn .photo a:nth-of-type(5) {margin-left:-40px;}
+.wrap .intro .container .img_btn .photo a img {}
+.wrap .intro .container .img_btn p {
     font-size:2.188rem;
     line-height:1.5;
+    margin:100px 0 150px;
 }
-.wrap .intro .img_btn .go_btn {background-color:blue;}
-.wrap .intro .img_btn .go_btn button {}
-.wrap .intro .img_btn .go_btn button {}
-/* -----------------e:1행 */
+.wrap .intro .container .img_btn .go_btn {}
+.wrap .intro .container .img_btn .go_btn > * {
+    padding:20px 40px;
+    background-color:#D9232E;
+    border-radius:40px;
+    font-size:1.875rem; font-weight:500px;
+}
+.wrap .intro .container .img_btn .go_btn .homepage {
+    margin-right:300px;
+}
+.wrap .intro .container .img_btn .go_btn .app {}
+/* -----------------e:1행 intro*/
+/* -----------------s:2행 quiz*/
+.wrap .quiz {
+    margin:0 auto; padding:100px 0;
+    position:relative;
+
+}
+.wrap .quiz .quiz_bg {
+    background-image:url(../images/quiz_bg2.jpg);
+    width:100%; height:100%;
+    opacity:30%; position:absolute;
+    top:0; left:0;
+    z-index:1;
+    background-size:cover;
+}
+.wrap .quiz .quiz_bg::before {
+    content:'';
+    position:absolute;
+    top:0; left:0;
+    /* background-image:url(../images/quiz_bg2.jpg); */
+    width:100%; height:100%;
+    z-index:1;
+    background-size:contain;
+    background:linear-gradient(180deg, rgba(0,0,0,0.6),transparent, rgba(0,0,0,0.6));
+
+}
+.wrap .quiz .container {
+    width:1520px;
+    margin:0 auto;
+    position:relative; z-index:10;
+}
+.wrap .quiz .container .top {
+    width:842px; height:510px;
+    margin:0 auto 100px; padding:50px 0;
+}
+.wrap .quiz .container .top p {
+    font-size:2.5rem; font-weight:600;
+}
+.wrap .quiz .container .top .list {
+    display:flex; flex-flow:column nowrap;
+    width:551px; height:270px;
+    margin:100px auto;
+    text-align:left;
+}
+.wrap .quiz .container .top .list label {margin-bottom:50px;}
+.wrap .quiz .container .top .list label input[value^=answer] {display:none;}
+.wrap .quiz .container .top .list label input[value^=answer]:checked + span {
+    background-image:url(../images/quiz_on.png);
+}
+.wrap .quiz .container .top .list label span {
+    font-size:1.563rem; font-weight:600;
+    /* 체크박스 설정 */
+    background-image:url(../images/quiz_off.png);
+    background-repeat:no-repeat;
+    background-size:4%;
+    display:block;
+    padding-left:30px;
+}
+.wrap .quiz .container .bottom {
+    width:464px;
+    margin:0 auto;
+}
+.wrap .quiz .container .bottom .quiz_chk {
+    font-size:2.188rem;
+    line-height:1.5;
+    width:max-content;
+    padding:20px 40px; margin:0 auto 30px;
+    border-radius:40px; border:5px solid #D9232E;
+    background-color:#000000;
+}
+.wrap .quiz .container .bottom p {
+    font-size:1.25rem; line-height:1.5;
+}
+/* -----------------e:2행 quiz*/
