@@ -62,7 +62,7 @@
     z-index:1;
     background-size:cover;
 }
-.wrap .quiz .quiz_bg::before {
+.wrap .quiz .quiz_bg::before {/* 퀴즈 배경 그라디언트넣기 (사진 밝은색으로 직접 그라디언트 넣어보기) */
     content:'';
     position:absolute;
     top:0; left:0;
