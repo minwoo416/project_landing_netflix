@@ -1,16 +1,18 @@
 .wrap {
     background-color:#000;
     text-align:center;
+    width:1920px;
 }
 .wrap .container{/* 공통 컨테이너 */
     margin:0 auto; width:1520px;
+    background-color:coral;
 }
 /* -----------------s:1행 intro */
 .wrap section {/* 각 행에 대한 마진 */
     margin-bottom:400px;
 }
 .wrap .intro {
-    background:url(../images/image_1.jpg) no-repeat 50% 0 ;
+    background:url(../images/text.jpg) no-repeat 50% 5%;
     
 }
 .wrap .intro .container {}
@@ -128,13 +130,32 @@
 .wrap .ad_video .container {
     display:grid;
     grid-template-columns:1fr 1fr;
+    padding:100px 0;
+    background:linear-gradient(90deg, #000, #D9232E, #D9232E,#000);
+    
+    height:800px;
+    align-content:center;
 }
 .wrap .ad_video .container .left_video {}
 .wrap .ad_video .container .left_video iframe {
-    width:700px; height:800px;
+    width:700px; height:393px;
 }
 .wrap .ad_video .container .right_content {}
-.wrap .ad_video .container .right_content h2 {}
-.wrap .ad_video .container .right_content p {}
-.wrap .ad_video .container .right_content p span {}
+.wrap .ad_video .container .right_content h2 {
+    font-size:3.125rem; font-weight:700;
+    line-height:1.5;
+}
+.wrap .ad_video .container .right_content p {
+    font-size:2.188rem;
+    line-height:1.5;
+}
+.wrap .ad_video .container .right_content p:nth-of-type(1) {
+    margin:100px 0 50px;
+}
+.wrap .ad_video .container .right_content p span {
+    font-size:2.188rem;
+    font-weight:700;
+    line-height:1.5;
+    color:#D9232E;
+}
 /* -----------------e:3행 video*/
