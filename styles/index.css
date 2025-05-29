@@ -1,13 +1,19 @@
-/* -----------------s:1행 intro */
 .wrap {
     background-color:#000;
     text-align:center;
 }
+.wrap .container{/* 공통 컨테이너 */
+    margin:0 auto; width:1520px;
+}
+/* -----------------s:1행 intro */
 .wrap section {/* 각 행에 대한 마진 */
     margin-bottom:400px;
 }
-.wrap .intro {background:url(../images/netflix_bg.jpg) no-repeat 50% 0 }
-.wrap .intro .container {margin:0 auto;}
+.wrap .intro {
+    background:url(../images/image_1.jpg) no-repeat 50% 0 ;
+    
+}
+.wrap .intro .container {}
 .wrap .intro .container .logo {
     margin-bottom:300px; padding-top:200px;
 }
@@ -73,11 +79,7 @@
     background:linear-gradient(180deg, rgba(0,0,0,0.4),transparent, rgba(0,0,0,0.4));
 
 }
-.wrap .quiz .container {
-    width:1520px;
-    margin:0 auto;
-    position:relative; z-index:10;
-}
+.wrap .quiz .container {position:relative; z-index:10;}
 .wrap .quiz .container .top {
     width:842px; height:510px;
     margin:0 auto 100px; padding:50px 0;
@@ -121,3 +123,18 @@
     font-size:1.25rem; line-height:1.5;
 }
 /* -----------------e:2행 quiz*/
+/* -----------------s:3행 video*/
+.wrap .ad_video {}
+.wrap .ad_video .container {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+.wrap .ad_video .container .left_video {}
+.wrap .ad_video .container .left_video iframe {
+    width:700px; height:800px;
+}
+.wrap .ad_video .container .right_content {}
+.wrap .ad_video .container .right_content h2 {}
+.wrap .ad_video .container .right_content p {}
+.wrap .ad_video .container .right_content p span {}
+/* -----------------e:3행 video*/
