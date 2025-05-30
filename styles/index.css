@@ -1,19 +1,17 @@
 .wrap {
     background-color:#000;
     text-align:center;
-    width:1920px;
 }
 .wrap .container{/* 공통 컨테이너 */
     margin:0 auto; width:1520px;
-    background-color:coral;
 }
 /* -----------------s:1행 intro */
-.wrap section {/* 각 행에 대한 마진 */
-    margin-bottom:400px;
+.wrap * section {/* 각 행에 대한 마진 */
+    /* margin-bottom:400px; */
 }
 .wrap .intro {
     background:url(../images/text.jpg) no-repeat 50% 5%;
-    
+    margin-bottom:400px;
 }
 .wrap .intro .container {}
 .wrap .intro .container .logo {
@@ -60,7 +58,7 @@
 .wrap .quiz {
     margin:0 auto; padding:100px 0;
     position:relative;
-
+    margin-bottom:400px;
 }
 .wrap .quiz .quiz_bg {
     background-image:url(../images/quiz_bg2.jpg);
@@ -126,21 +124,27 @@
 }
 /* -----------------e:2행 quiz*/
 /* -----------------s:3행 video*/
-.wrap .ad_video {}
+.wrap .ad_video {
+    margin-bottom:400px;
+    /* background:
+    linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(217,35,46,0.5),rgba(0,0,0,0.5)),
+    linear-gradient(to right, rgba(0,0,0,0.8), rgba(217,35,46,1),rgba(0,0,0,0.5)); */
+    background: 
+    linear-gradient(to right, rgba(0,0,0,0.8),rgba(217,35,46,0.7), rgba(217,35,46,0.5),rgba(217,35,46,0.7), rgba(0,0,0,0.8)),
+    linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(217,35,46,0.5),rgba(0,0,0,0.8));
+background-blend-mode: multiply;
+}
 .wrap .ad_video .container {
-    display:grid;
-    grid-template-columns:1fr 1fr;
+    display:flex; justify-content:space-between;
     padding:100px 0;
-    background:linear-gradient(90deg, #000, #D9232E, #D9232E,#000);
-    
-    height:800px;
+    /* height:800px; */
     align-content:center;
 }
 .wrap .ad_video .container .left_video {}
 .wrap .ad_video .container .left_video iframe {
     width:700px; height:393px;
 }
-.wrap .ad_video .container .right_content {}
+.wrap .ad_video .container .right_content {text-align:left;}
 .wrap .ad_video .container .right_content h2 {
     font-size:3.125rem; font-weight:700;
     line-height:1.5;
@@ -159,3 +163,6 @@
     color:#D9232E;
 }
 /* -----------------e:3행 video*/
+/* -----------------s:4행 slide*/
+
+/* -----------------e:4행 slide*/
