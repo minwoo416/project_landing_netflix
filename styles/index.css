@@ -11,13 +11,28 @@
     /* margin-bottom:400px; */
 }
 .wrap .intro {
-    background:url(../images/text.jpg) no-repeat center;
     margin-bottom:400px;
-    /* height:100vh; */
+    min-height:100vh;
+    position:relative; top:0; left:0;
+    z-index:50;
 }
-.wrap .intro .container {/* background:coral; */}
+.wrap .intro .container {}
+.wrap .intro .container .intro_bg {
+    /* background:url(../images/intro_bg.webp) no-repeat 50% 50%; */
+    width:100vw; height:100vh;
+    position:absolute; top:130px; left:0;
+    z-index:-1;
+    background: #000;
+    background:
+    linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, transparent,transparent, rgba(0, 0, 0, 1) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, transparent, rgba(0, 0, 0, 1) 100%),
+    url(../images/intro_bg.webp)
+    ;
+    
+}
 .wrap .intro .container .logo {
-    margin-bottom:300px; padding-top:200px;
+    margin-bottom:300px; padding:200px 0;
+    /* background:red; */
 }
 .wrap .intro .container .logo h1 {}
 .wrap .intro .container .logo h1 a {}
