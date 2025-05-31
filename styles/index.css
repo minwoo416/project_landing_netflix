@@ -1,19 +1,21 @@
 .wrap {
     background-color:#000;
     text-align:center;
+    padding-bottom:200px;
 }
 .wrap .container{/* 공통 컨테이너 */
-    margin:0 auto; width:1520px;
+    margin:0 auto; width:1400px;
 }
 /* -----------------s:1행 intro */
 .wrap * section {/* 각 행에 대한 마진 */
     /* margin-bottom:400px; */
 }
 .wrap .intro {
-    background:url(../images/text.jpg) no-repeat 50% 5%;
+    background:url(../images/text.jpg) no-repeat center;
     margin-bottom:400px;
+    /* height:100vh; */
 }
-.wrap .intro .container {}
+.wrap .intro .container {/* background:coral; */}
 .wrap .intro .container .logo {
     margin-bottom:300px; padding-top:200px;
 }
@@ -28,7 +30,6 @@
 .wrap .intro .container .img_btn {}
 .wrap .intro .container .img_btn .photo {
     display:flex; align-items:center; justify-content:center;
-    width:1520px; margin:0 auto;
 }
 .wrap .intro .container .img_btn .photo a {}
 .wrap .intro .container .img_btn .photo a:nth-of-type(1) {margin-right:-40px;}
@@ -131,8 +132,8 @@
     linear-gradient(to right, rgba(0,0,0,0.8), rgba(217,35,46,1),rgba(0,0,0,0.5)); */
     background: 
     linear-gradient(to right, rgba(0,0,0,0.8),rgba(217,35,46,0.7), rgba(217,35,46,0.5),rgba(217,35,46,0.7), rgba(0,0,0,0.8)),
-    linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(217,35,46,0.5),rgba(0,0,0,0.8));
-background-blend-mode: multiply;
+    linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(217,35,46),rgba(0,0,0,0.8));
+    background-blend-mode: multiply;
 }
 .wrap .ad_video .container {
     display:flex; justify-content:space-between;
@@ -142,7 +143,7 @@ background-blend-mode: multiply;
 }
 .wrap .ad_video .container .left_video {}
 .wrap .ad_video .container .left_video iframe {
-    width:700px; height:393px;
+    width:600px; height:393px;
 }
 .wrap .ad_video .container .right_content {text-align:left;}
 .wrap .ad_video .container .right_content h2 {
@@ -164,5 +165,23 @@ background-blend-mode: multiply;
 }
 /* -----------------e:3행 video*/
 /* -----------------s:4행 slide*/
-
+.wrap .ad_slide {}
+.wrap .ad_slide .container {width:100vw;}
+.wrap .ad_slide .container .slide_wrap {margin-bottom:100px;}
+.wrap .ad_slide .container .slide_wrap > * {/* top_slide , bottom_slide의 공통 속성 */
+    display:flex; flex-flow:row nowrap;
+    width:100%;  overflow:hidden;
+    gap:20px;
+}
+.wrap .ad_slide .container .slide_wrap .top_slide {margin-bottom:20px;}
+.wrap .ad_slide .container .slide_wrap .top_slide a {}
+.wrap .ad_slide .container .slide_wrap .top_slide a img {}
+.wrap .ad_slide .container .slide_wrap .bottom_slide {}
+.wrap .ad_slide .container .slide_wrap .bottom_slide a {}
+.wrap .ad_slide .container .slide_wrap .bottom_slide a img {
+}
+.wrap .ad_slide .container p{
+    font-size:2.188rem;
+    line-height:1.5;
+}
 /* -----------------e:4행 slide*/
