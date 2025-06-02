@@ -1,0 +1,61 @@
+/* responsive.css */  
+/* desktop : 1920~1250 */
+/* tablet : 1249~830 */
+@media screen and (max-width:1249px){
+    /* ================================================ 1행 */
+    .wrap .intro .container {width:100%;}
+    .wrap .intro .container .logo h2 {
+        font-size:2.5rem; font-weight:700;
+    }
+    .wrap .intro .container .img_btn .go_btn .homepage {
+        margin-right:100px;
+    }
+    /* ================================================ 2행 */
+    .wrap .quiz .container .bottom .quiz_chk {
+        font-size:1.875rem; font-weight:500px;
+    }
+    /* ================================================ 3행 */
+    .wrap .ad_video .container {
+        display:flex; flex-flow:column nowrap;
+    }
+    .wrap .ad_video .container .left_video {margin-bottom:130px;}
+    .wrap .ad_video .container .right_content {text-align:center;}
+    .wrap .ad_video .container .right_content h2 {
+        font-size:2.5rem; font-weight:700;
+    }
+    /* ================================================ 4행 */
+}
+/* mobile : 829~320 */
+@media screen and (max-width:829px){
+    /* ================================================ 1행 */
+    .wrap * section {margin-bottom:200px;}
+    .wrap .intro {}
+    .wrap .intro .container .img_btn .go_btn {
+        display:flex; flex-flow:column wrap;
+        align-items:center;
+    }
+    .wrap .intro .container .img_btn .go_btn > * {
+    }
+    .wrap .intro .container .img_btn .go_btn .homepage {
+        margin-right:0;
+        margin-bottom:50px;
+    }
+    /* ================================================ 2행 */
+    .wrap .quiz .container .top {width:631px;}
+    .wrap .quiz .container .top p {
+        font-size:1.875rem;
+        font-weight:600;
+    }
+    .wrap .quiz .container .top .list label span {
+        font-size:1.25rem;
+    }
+    .wrap .quiz .container .bottom .quiz_chk {
+        font-size:1.563rem;
+        font-weight:600;
+    }
+    /* ================================================ 3행 */
+    .wrap .ad_video .container .right_content p {
+        display:none;
+    }
+    /* ================================================ 4행 */
+}
