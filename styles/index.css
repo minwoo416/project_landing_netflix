@@ -5,7 +5,7 @@ body * {transition:all 0.5s;}
     padding-bottom:200px;
 }
 /* -----------------s:1행 intro */
-.wrap * section {/* 각 행에 대한 마진 */
+.wrap > div {/* 각 행에 대한 마진 */
     /* margin-bottom:400px; */
 }
 .wrap .intro {
@@ -31,6 +31,11 @@ body * {transition:all 0.5s;}
     linear-gradient(180deg, rgba(0, 0, 0, 1) -5%, transparent, rgba(0, 0, 0, 1) 100%),
     url(../images/intro_bg.webp) 25% 90%;
     ;
+    animation:intro_bg 5s 5s;
+}
+.wrap .intro .container .intro_bg video {
+    width:1520px; 
+    animation:video_end 0.5s 1s;
 }
 .wrap .intro .container .logo {
     margin-bottom:300px; padding:200px 0;
@@ -116,9 +121,12 @@ body * {transition:all 0.5s;}
     display:flex; flex-flow:column nowrap;
     width:551px; height:270px;
     margin:100px auto;
+    text-align:center;
+}
+.wrap .quiz .container .top .list label {
+    margin-bottom:50px;
     text-align:left;
 }
-.wrap .quiz .container .top .list label {margin-bottom:50px;}
 .wrap .quiz .container .top .list label input[value^=answer] {display:none;}
 .wrap .quiz .container .top .list label input[value^=answer]:checked + span {
     background-image:url(../images/quiz_on.png);
@@ -136,13 +144,19 @@ body * {transition:all 0.5s;}
     width:464px;
     margin:0 auto;
 }
-.wrap .quiz .container .bottom .quiz_chk {
-    font-size:2.188rem;
-    line-height:1.5;
+.wrap .quiz .container .bottom {
+    
+    
+}
+.wrap .quiz .container .bottom button {
     width:max-content;
     padding:20px 40px; margin:0 auto 30px;
     border-radius:40px; border:5px solid #D9232E;
     background-color:#000000;
+}
+.wrap .quiz .container .bottom button span {
+    font-size:2.188rem;
+    line-height:1.5;
 }
 .wrap .quiz .container .bottom p {
     font-size:1.25rem; line-height:1.5;
@@ -217,3 +231,16 @@ body * {transition:all 0.5s;}
     line-height:1.5;
 }
 /* -----------------e:4행 slide*/
+/* -----------------------------------------애니메이션 */
+@keyframes intro_bg{
+    0% {transform:scale(90%); opacity:10%;}
+    100% {transform:scale(100%); opacity:100%;}
+}
+@keyframes video_end {
+    0% {display:none;}
+    100% {
+        display:none;
+    }
+}
+@keyframes slide_top {}
+@keyframes slide_bottom {}

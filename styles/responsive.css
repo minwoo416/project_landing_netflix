@@ -3,18 +3,43 @@
 /* tablet : 1249~830 */
 @media screen and (max-width:1249px){
     /* ================================================ 1행 */
+    /* .wrap > div {margin-bottom:300px;} */
+    .wrap .intro {margin-bottom:300px;}
     .wrap .intro .container {width:100%;}
     .wrap .intro .container .logo h2 {
         font-size:2.5rem; font-weight:700;
+        line-height:1.5;
+    }
+    .wrap .intro .container .img_btn p {
+        font-size:1.5625rem;
+        line-height:1.5;
+    }
+    .wrap .intro .container .img_btn .go_btn > * {
+        font-size:1.25rem;
+        font-weight:500;
+        width:250px;
     }
     .wrap .intro .container .img_btn .go_btn .homepage {
         margin-right:100px;
     }
     /* ================================================ 2행 */
-    .wrap .quiz .container .bottom .quiz_chk {
-        font-size:1.875rem; font-weight:500px;
+    .wrap .quiz {margin-bottom:300px;}
+    .wrap .quiz .container .top p {
+        font-size:1.875rem;
+        font-weight:600;
+    }
+    .wrap .quiz .container .top .list label span {
+        font-size:1.25rem; font-weight:600;
+        /* 체크박스 설정 */
+        background-size:3.5%;
+    }
+    .wrap .quiz .container .bottom button {}
+    .wrap .quiz .container .bottom button span {
+        font-size:1.25rem;
+        font-weight:500;
     }
     /* ================================================ 3행 */
+    .wrap .ad_video {margin-bottom:300px;}
     .wrap .ad_video .container {
         display:flex; flex-flow:column nowrap;
     }
@@ -22,40 +47,70 @@
     .wrap .ad_video .container .right_content {text-align:center;}
     .wrap .ad_video .container .right_content h2 {
         font-size:2.5rem; font-weight:700;
+        line-height:1.5;
+    }
+    .wrap .ad_video .container .right_content p {
+        font-size:1.5625rem;
+        line-height:1.5;
+    }
+    .wrap .ad_video .container .right_content p span {
+        font-size:1.5625rem;
+        line-height:1.5;
     }
     /* ================================================ 4행 */
+    .wrap .ad_slide .container p {
+        font-size:1.5625rem;
+        line-height:1.5;
+    }
 }
 /* mobile : 829~320 */
 @media screen and (max-width:829px){
     /* ================================================ 1행 */
-    .wrap * section {margin-bottom:200px;}
-    .wrap .intro {}
+    /* .wrap > div {margin-bottom:200px;} */
+    .wrap .intro {margin-bottom:200px;}
+    .wrap .intro .container .logo h2 {
+        font-size:1.875rem;
+        font-weight:700; line-height:1.5;
+    }
     .wrap .intro .container .img_btn .go_btn {
         display:flex; flex-flow:column wrap;
         align-items:center;
     }
+    .wrap .intro .container .img_btn p {
+        font-size:1.25rem; line-height:1.5;
+    }
     .wrap .intro .container .img_btn .go_btn > * {
+        width:200px; font-size:1rem;
     }
     .wrap .intro .container .img_btn .go_btn .homepage {
         margin-right:0;
         margin-bottom:50px;
     }
     /* ================================================ 2행 */
+    .wrap .quiz {margin-bottom:200px;}
     .wrap .quiz .container .top {width:631px;}
     .wrap .quiz .container .top p {
-        font-size:1.875rem;
+        font-size:1.5625;
         font-weight:600;
     }
-    .wrap .quiz .container .top .list label span {
-        font-size:1.25rem;
-    }
-    .wrap .quiz .container .bottom .quiz_chk {
-        font-size:1.563rem;
-        font-weight:600;
+    .wrap .quiz .container .bottom button span {
+        font-size:1rem; line-height:1.5;
+        font-weight:600; height:max-content;
     }
     /* ================================================ 3행 */
+    .wrap .ad_video {margin-bottom:200px;}
+    .wrap .ad_video .container .right_content h2 {
+        font-size:1.875rem;
+        font-weight:700; line-height:1.5;
+    }
     .wrap .ad_video .container .right_content p {
         display:none;
     }
+    .wrap .ad_video .container .left_video iframe {
+        width:400px; height:500px;
+    }
     /* ================================================ 4행 */
+    .wrap .ad_slide .container p {
+        font-size:1.25rem; line-height:1.5;
+    }
 }
