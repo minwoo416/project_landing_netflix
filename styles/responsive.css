@@ -6,6 +6,7 @@
     /* .wrap > div {margin-bottom:300px;} */
     .wrap .intro {margin-bottom:300px;}
     .wrap .intro .container {width:100%;}
+    .wrap .intro .container .logo h1 a img {}
     .wrap .intro .container .logo h2 {
         font-size:2.5rem; font-weight:700;
         line-height:1.5;
@@ -14,6 +15,7 @@
         font-size:1.5625rem;
         line-height:1.5;
     }
+    .wrap .intro .container .img_btn .photo {}
     .wrap .intro .container .img_btn .go_btn > * {
         font-size:1.25rem;
         font-weight:500;
@@ -68,10 +70,14 @@
     /* ================================================ 1행 */
     /* .wrap > div {margin-bottom:200px;} */
     .wrap .intro {margin-bottom:200px;}
+    .wrap .intro .container .logo {margin-bottom:200px;}
+    .wrap .intro .container .logo h1 a img {width:80%;}
     .wrap .intro .container .logo h2 {
         font-size:1.875rem;
         font-weight:700; line-height:1.5;
     }
+    .wrap .intro .container .img_btn .photo {overflow:hidden;}
+    .wrap .intro .container .img_btn .photo a img {width:100%;}
     .wrap .intro .container .img_btn .go_btn {
         display:flex; flex-flow:column wrap;
         align-items:center;
